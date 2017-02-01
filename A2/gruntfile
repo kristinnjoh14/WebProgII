@@ -1,0 +1,1 @@
+module.exports=function(a){a.loadNpmTasks("grunt-contrib-jshint"),a.loadNpmTasks("grunt-contrib-uglify");var b={jshint:{src:[".js"],gruntfile:["Gruntfile.js"],options:{}},uglify:{src:[".js"],gruntfile:["Gruntfile.js"],options:{}}};a.initConfig(b)};
