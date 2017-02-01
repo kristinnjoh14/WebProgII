@@ -1,0 +1,70 @@
+
+<html>
+<head>
+	<title>AIMFIRE (Amazing Image Manipulation For Interesting Realworld Expositions)</title>
+	<link rel="stylesheet" type="text/css" href="aimfire.css">
+</head>
+<body style="margin: 0">
+	<canvas id="AmazingCanvas" style="border:3px solid #000000;">Your browser is bad and you should feel bad</canvas>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="aimfire.js"></script>
+	<script type="text/javascript" src="colour.js"></script>
+	<script type="text/javascript" src="save.js"></script>
+	<div class="toolbar" id="toolbar">
+		<form class="tool" onsubmit="return false">
+			Pen Size: <input id="pensize" value="5" type="number">
+			<button onclick="setPenSize(parseInt(document.getElementById('pensize').value), 0)">Apply</button>
+		</form>
+		<br>
+		<form class="tool" onsubmit="return false">
+			Circle Radius: <input id="circleradius" value="40" type="number">
+			<button onclick="setCircleRadius(parseInt(document.getElementById('circleradius').value), 0)">Apply</button>
+		</form>
+		<br>
+		<form class="tool" onsubmit="return false">
+			Rectangle Width: <input id="rectanglewidth" value="40" type="number">
+			<button onclick="setRectangleWidth(parseInt(document.getElementById('rectanglewidth').value), 0)">Apply</button>
+		</form>
+		<bl>
+		<form class="tool" onsubmit="return false">
+			Rectangle Height: <input id="rectangleheight" value="40" type="number">
+			<button onclick="setRectangleHeight(parseInt(document.getElementById('rectangleheight').value), 0)">Apply</button>
+		</form>
+		<br>
+		<form class="tool" onsubmit="return false">
+			Text Input: <input id="textinput" value="Hello, world!" type="text">
+			<button onclick="setText(document.getElementById('textinput').value)">Apply</button>
+		</form>
+		<br>
+		<form class="tool" onsubmit="return false">
+			<button onclick="setFuncDrawing()">Free-hand drawing</button>
+		</form>
+		<form class="tool" onsubmit="return false">
+			<button onclick="setFuncCircle()">Circles</button>
+		</form>
+		<form class="tool" onsubmit="return false">
+			<button onclick="setFuncRectangle()">Rectangles</button>
+		</form>
+		<form class="tool" onsubmit="return false">
+			<button onclick="setFuncText()">Text</button>
+		</form>
+		<form class="tool" onsubmit="return false">
+			<button onclick="undo1()">Undo</button>
+		</form>
+		<form class="tool" onsubmit="return false">
+			<button onclick="redo1()">Redo</button>
+		</form>
+		<form class="tool" onsubmit="return false">
+			<button onclick="saveImage()">Save</button>
+		</form>
+		<p class="tool">Colors, unfortunately, do not work and nor does saving. Out of time. Start earlier next time! </p>
+		<div class="tool" id="colours">
+			<div class="cSwitch active" style="background-color: black"></div>
+			<div class="cSwitch" style="background-color: yellow"></div>
+			<div class="cSwitch" style="background-color: red"></div>
+			<div class="cSwitch" style="background-color: green"></div>
+			<div class="cSwitch" style="background-color: blue"></div>
+		</div>
+	</div>
+</body>
+</html>
